@@ -9,7 +9,7 @@ const Homepage = () => {
       <div className="row">
         <div className="col-md-3"></div>
         <div className="col-md-9">
-          <h1 className="text-center">Homepage</h1>
+          <h1 className="text-center"></h1>
         </div>
       </div>
     </Layout>
