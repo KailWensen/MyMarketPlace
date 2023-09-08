@@ -60,6 +60,8 @@ const Homepage = () => {
               </Checkbox>
             ))}
           </div>
+          <h4 className="text-center">Filter By Price:</h4>
+          <div className="d-flex flex-column m-2"></div>
         </div>
         {JSON.stringify(checked, null, 4)}
         <div className="col-md-9">
