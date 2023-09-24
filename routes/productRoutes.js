@@ -6,6 +6,7 @@ import {
   deleteProductController,
   getProductController,
   getSingleProduct,
+  productCategoryController,
   productCountController,
   productFilterController,
   productListController,
@@ -65,4 +66,6 @@ router.get("/product-list/:page", productListController);
 //search Product
 router.get("/search/:keyword", searchProductController);
 
+//category Wise product
+router.get('/product-category/:slug', productCategoryController)
 export default router;
