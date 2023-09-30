@@ -8,6 +8,7 @@ import dotenv from "dotenv"
 
 dotenv.config()
 
+
 //payment Gateway
 var gateway = new braintree.BraintreeGateway({
   environment: braintree.Environment.Sandbox,
@@ -318,8 +319,9 @@ export const braintreeTokenController = async (req, res) => {
     console.log(error);
   }
 };
+
 //payments
-export const braintreePaymentsController = () => {
+export const braintreePaymentsController = (req, res) => {
   try {
     const { nonce, cart } = req.body;
     let total = 0;
