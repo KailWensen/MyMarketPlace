@@ -76,5 +76,5 @@ router.get('/product-category/:slug', productCategoryController)
 //token
 router.get('/braintree/token', braintreeTokenController)
 //payments
-router.post('/braintree/payments', requireSignin, braintreePaymentsController)
+router.post('/braintree/payment', requireSignin, braintreePaymentsController)
 export default router;
