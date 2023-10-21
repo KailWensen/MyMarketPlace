@@ -8,6 +8,7 @@ import CategoryRoutes from "./routes/CategoryRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import cors from "cors";
 import path from "path";
+const __dirname = path.resolve();
 //configure dotenv
 dotenv.config();
 
@@ -27,6 +28,8 @@ app.use(express.static(path.join(__dirname, "./client/build")));
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/category", CategoryRoutes);
 app.use("/api/v1/product", productRoutes);
+
+
 
 //rest api
 app.use("*", function (req, res) {
